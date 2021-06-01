@@ -19,7 +19,7 @@ index 2a586f9e9ef..b4f5abb08db 100644
 +        --replace 'ENGINESDIR=$(libdir)/engines-{- $sover_dirname -}' \
 +                  'ENGINESDIR=$(OPENSSLDIR)/engines-{- $sover_dirname -}'
 +     '';
-+ 
++
 +    outputs =
 +      [ "bin" "dev" "out" "man" ]
 +      ++ optional withDocs "doc"
@@ -33,7 +33,7 @@ index 2a586f9e9ef..b4f5abb08db 100644
        "shared" # "shared" builds both shared and static libraries
        "--libdir=lib"
 -      "--openssldir=etc/ssl"
-++      (if !static then
++      (if !static then
 +         "--openssldir=etc/ssl"
 +       else
 +         # Separate the OPENSSLDIR into its own output, as its path will be
