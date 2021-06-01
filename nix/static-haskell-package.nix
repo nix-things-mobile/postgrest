@@ -6,7 +6,7 @@ let
   # The nh2/static-haskell-nix project does all the hard work for us.
   static-haskell-nix =
     let
-      rev = ""382150290ba43b6eb41981c1ab3b32aa31798140;
+      rev = "382150290ba43b6eb41981c1ab3b32aa31798140";
     in
     builtins.fetchTarball {
       url = "https://github.com/nh2/static-haskell-nix/archive/${rev}.tar.gz";
