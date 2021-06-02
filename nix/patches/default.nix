@@ -26,6 +26,9 @@
   nixpkgs-gdb-fix-libintl =
     ./nixpkgs-gdb-fix-libintl.patch;
 
+  static-haskell-nix-hledger-fix =
+    ./static-haskell-nix-hledger-fix.patch;
+
   # Fix how openssl is linked on static builds, see:
   # https://github.com/nh2/static-haskell-nix/pull/91
   static-haskell-nix-postgrest-openssl-linking-fix =
